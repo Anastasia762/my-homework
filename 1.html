@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: rgba(240, 235, 228, 0.408);
+
+        }
+
+
+
+        header,
+        footer {
+            flex: 0 0 content;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flescontainer {
+            display: flex;
+            flex-wrap: nowrap;
+
+        }
+
+
+
+        body {
+            display: flex;
+            flex-flow: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            width: 100vh;
+            background-color: rgba(250, 238, 208, 0.872);
+        }
+
+        aside {
+            width: 30vh;
+            background-color: rgb(147, 188, 161);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(240, 235, 228, 0.408)
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Шапка страницы</h1>
+    </header>
+
+    <main class="main">
+        <nav class="nav">
+            <h1>Основная часть</h1>
+            <div class="flexcontainer">
+                <p class="flexp">Еще 1</p>
+                <p class="flexp">Еще 2</p>
+                <p class="flexp">Еще 3</p>
+            </div>
+
+        </nav>
+
+
+        <aside class="aside">Боковая область</aside>
+    </main>
+
+    <footer class="footer">
+        <div class="flexcontainer">
+            <p1 class="flexp">Секция футера 1</p1>
+            <p1 class="flexp">Секция футера 2</p1>
+            <p1 class="flexp">Секция футера 3</p1>
+            <p1 class="flexp">Секция футера 4</p1>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
